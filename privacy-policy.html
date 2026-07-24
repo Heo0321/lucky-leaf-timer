@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Lucky Leaf Timer</title>
+<style>
+  :root {
+    --bg: #fdfaf6;
+    --text: #3d2f24;
+    --sub: #6b5b4d;
+    --accent: #8a6d4f;
+    --card: #ffffff;
+    --border: #e8ddd0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #221b16;
+      --text: #f1e9df;
+      --sub: #c9baa9;
+      --accent: #d9b88c;
+      --card: #2c231d;
+      --border: #3a2f27;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 0 16px 60px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { padding: 40px 0 16px; text-align: center; }
+  header h1 { font-size: 26px; margin: 0 0 6px; }
+  header p { color: var(--sub); font-size: 14px; margin: 0; }
+  .lang-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0 30px;
+  }
+  .lang-toggle button {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .lang-toggle button.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card h2 { font-size: 18px; margin: 0 0 10px; color: var(--accent); }
+  .card p, .card li { font-size: 15px; color: var(--text); }
+  .card ul { padding-left: 20px; }
+  .updated { text-align: center; color: var(--sub); font-size: 13px; margin-top: 30px; }
+  a { color: var(--accent); }
+  .lang-block[hidden] { display: none; }
+  footer { text-align: center; color: var(--sub); font-size: 12px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🍀 Lucky Leaf Timer</h1>
+    <p>Privacy Policy / 개인정보처리방침</p>
+  </header>
+
+  <div class="lang-toggle">
+    <button id="btn-ko" class="active" onclick="setLang('ko')">한국어</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ============ KOREAN ============ -->
+  <div id="lang-ko" class="lang-block">
+
+    <div class="card">
+      <h2>1. 총칙</h2>
+      <p>개발자 Heonix(이하 "개발자")는 "Lucky Leaf Timer"(이하 "앱") 이용자의 개인정보를 중요하게 생각하며, 관련 법령 및 Google Play 개발자 정책을 준수합니다. 본 개인정보처리방침은 앱이 어떤 정보를 수집·이용·제공하는지 설명합니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. 수집하는 개인정보 항목</h2>
+      <p>본 앱은 로그인, 회원가입, 자체 서버, Firebase를 사용하지 않으며 이름, 이메일, 위치, 연락처, 카메라, 마이크, 사진, 파일 등 개인 식별 정보를 직접 수집하지 않습니다. 다만 아래의 제3자 서비스(광고 SDK, 결제 SDK)를 통해 자동으로 생성·수집되는 정보가 있습니다.</p>
+      <ul>
+        <li>광고 식별자(Advertising ID), 기기 정보, IP 주소, 앱 사용 로그 (Google AdMob)</li>
+        <li>구매 내역, 거래 ID (Google Play Billing)</li>
+        <li>앱 평점 및 리뷰 제출 정보 (Google Play In-App Review)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. 개인정보 수집 방법 및 목적</h2>
+      <ul>
+        <li><b>Google AdMob (Native Ads):</b> 맞춤형/일반 광고 제공 및 광고 효과 측정을 위해 광고 식별자, 기기 정보 등이 수집됩니다.</li>
+        <li><b>Google Play Billing:</b> "광고 제거" 인앱 상품(2,900원) 결제 처리를 위해 Google Play 결제 시스템을 통해 구매 정보가 처리됩니다. 결제 정보(카드 정보 등)는 개발자가 직접 수집하지 않으며 Google이 처리합니다.</li>
+        <li><b>Google Play In-App Review:</b> 앱 내 평점 요청 시 Google Play 자체 리뷰 시스템이 사용되며, 개발자는 개별 사용자의 리뷰 내용이나 신원을 식별할 수 없습니다.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. 맞춤형 광고(Personalized Ads) 및 UMP(사용자 메시징 플랫폼)</h2>
+      <p>본 앱은 Google AdMob을 통해 맞춤형 광고를 제공할 수 있습니다. 유럽경제지역(EEA), 영국, 스위스 사용자에게는 Google이 제공하는 UMP(User Messaging Platform) SDK를 통해 앱 최초 실행 시 동의 화면이 표시되며, 이용자는 다음을 선택할 수 있습니다.</p>
+      <ul>
+        <li>맞춤형 광고 동의</li>
+        <li>비맞춤형 광고만 허용</li>
+        <li>언제든지 앱 내 설정에서 동의 상태 변경(개인정보 설정 옵션)</li>
+      </ul>
+      <p>동의를 거부하더라도 앱의 핵심 기능(타이머 등)은 정상적으로 이용할 수 있습니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. 개인정보의 제3자 제공</h2>
+      <p>개발자는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만 아래 제3자는 각자의 개인정보처리방침에 따라 앱 운영에 필요한 최소한의 정보를 처리합니다.</p>
+      <ul>
+        <li>Google AdMob – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+        <li>Google Play Billing – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+        <li>Google Play In-App Review – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. 개인정보의 보유 및 이용 기간</h2>
+      <p>본 앱은 자체 서버에 개인정보를 저장하지 않습니다. 광고 SDK 및 결제 SDK를 통해 생성되는 정보는 각 제3자(Google)의 정책에 따라 보관·파기됩니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. 이용자의 권리</h2>
+      <ul>
+        <li>기기 설정(Android 설정 > 개인정보 보호 > 광고)에서 광고 개인최적화를 해제하거나 광고 식별자를 재설정할 수 있습니다.</li>
+        <li>앱 내 개인정보 설정(UMP 개인정보 옵션)에서 동의 상태를 언제든지 변경할 수 있습니다.</li>
+        <li>본 방침 및 개인정보 처리에 대해 문의하고자 하는 경우 아래 이메일로 연락할 수 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>8. 아동의 개인정보</h2>
+      <p>본 앱은 만 14세 미만 아동을 주 대상으로 하지 않으며, 아동으로부터 고의로 개인정보를 수집하지 않습니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>9. 문의처</h2>
+      <p>개인정보처리방침에 대한 문의: <a href="mailto:hsgdf123@gmail.com">hsgdf123@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+      <h2>10. 방침의 변경</h2>
+      <p>본 개인정보처리방침은 관련 법령 및 정책 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
+      <p><b>시행일: 2026년 7월 24일</b></p>
+    </div>
+
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div id="lang-en" class="lang-block" hidden>
+
+    <div class="card">
+      <h2>1. Overview</h2>
+      <p>Developer Heonix ("Developer") values the privacy of users of "Lucky Leaf Timer" (the "App") and complies with applicable laws and Google Play Developer Program Policies. This Privacy Policy explains what information the App collects, uses, and discloses.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Information We Collect</h2>
+      <p>The App does not use login, sign-up, its own backend server, or Firebase, and does not directly collect personally identifiable information such as name, email, location, contacts, camera, microphone, photos, or files. However, the following third-party SDKs (advertising and billing) automatically generate or collect certain information.</p>
+      <ul>
+        <li>Advertising ID, device information, IP address, app usage logs (Google AdMob)</li>
+        <li>Purchase history, transaction ID (Google Play Billing)</li>
+        <li>Rating and review submission data (Google Play In-App Review)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. How and Why Data Is Collected</h2>
+      <ul>
+        <li><b>Google AdMob (Native Ads):</b> Used to serve personalized/non-personalized ads and measure ad performance; collects advertising ID and device information.</li>
+        <li><b>Google Play Billing:</b> Used to process the "Remove Ads" in-app purchase (₩2,900). Purchase transactions are handled by Google Play; the Developer does not directly collect payment card data.</li>
+        <li><b>Google Play In-App Review:</b> Uses Google Play's native in-app review system. The Developer cannot identify individual reviewers or their review content.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Personalized Ads &amp; UMP (User Messaging Platform)</h2>
+      <p>The App may serve personalized ads through Google AdMob. For users in the European Economic Area (EEA), the UK, and Switzerland, Google's UMP SDK displays a consent form on first launch, allowing users to:</p>
+      <ul>
+        <li>Consent to personalized ads</li>
+        <li>Allow non-personalized ads only</li>
+        <li>Change consent choices at any time via in-app Privacy Options</li>
+      </ul>
+      <p>Core app functionality (the timer) remains fully usable regardless of consent choice.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. Third-Party Data Sharing</h2>
+      <p>The Developer does not sell or share personal information with third parties beyond what is required to operate the following services, each governed by its own privacy policy:</p>
+      <ul>
+        <li>Google AdMob – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li>Google Play Billing – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li>Google Play In-App Review – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. Data Retention</h2>
+      <p>The App does not store personal data on any Developer-owned server. Data generated via third-party SDKs is retained and deleted according to each provider's (Google's) policies.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. Your Rights</h2>
+      <ul>
+        <li>You can opt out of ad personalization or reset your advertising ID in your device settings (Settings > Privacy > Ads).</li>
+        <li>You can change your consent status at any time via the in-app Privacy Options (UMP).</li>
+        <li>You may contact us using the email below with any privacy-related questions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>8. Children's Privacy</h2>
+      <p>The App is not directed at children under 13 (or the applicable age of consent in your jurisdiction), and we do not knowingly collect personal information from children.</p>
+    </div>
+
+    <div class="card">
+      <h2>9. Contact</h2>
+      <p>For privacy-related inquiries: <a href="mailto:hsgdf123@gmail.com">hsgdf123@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+      <h2>10. Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated to reflect changes in law or policy. Updates will be posted on this page.</p>
+      <p><b>Effective Date: July 24, 2026</b></p>
+    </div>
+
+  </div>
+
+  <div class="updated">Last updated: 2026-07-24</div>
+  <footer>© 2026 Heonix. All rights reserved.</footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('lang-ko').hidden = lang !== 'ko';
+    document.getElementById('lang-en').hidden = lang !== 'en';
+    document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>
