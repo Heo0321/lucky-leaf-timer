@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Lucky Leaf Timer</title>
+<style>
+  :root {
+    --bg: #fdfaf6;
+    --text: #3d2f24;
+    --sub: #6b5b4d;
+    --accent: #8a6d4f;
+    --card: #ffffff;
+    --border: #e8ddd0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #221b16;
+      --text: #f1e9df;
+      --sub: #c9baa9;
+      --accent: #d9b88c;
+      --card: #2c231d;
+      --border: #3a2f27;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 0 16px 60px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { padding: 40px 0 16px; text-align: center; }
+  header h1 { font-size: 26px; margin: 0 0 6px; }
+  header p { color: var(--sub); font-size: 14px; margin: 0; }
+  .lang-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0 30px;
+  }
+  .lang-toggle button {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .lang-toggle button.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+  }
+  .card h2 { font-size: 18px; margin: 0 0 10px; color: var(--accent); }
+  .card p, .card li { font-size: 15px; color: var(--text); }
+  .card ul { padding-left: 20px; }
+  .updated { text-align: center; color: var(--sub); font-size: 13px; margin-top: 30px; }
+  a { color: var(--accent); }
+  .lang-block[hidden] { display: none; }
+  footer { text-align: center; color: var(--sub); font-size: 12px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🍀 Lucky Leaf Timer</h1>
+    <p>Privacy Policy / 개인정보처리방침</p>
+  </header>
+
+  <div class="lang-toggle">
+    <button id="btn-ko" class="active" onclick="setLang('ko')">한국어</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ============ KOREAN ============ -->
+  <div id="lang-ko" class="lang-block">
+
+    <div class="card">
+      <h2>1. 총칙</h2>
+      <p>개발자 Heonix(이하 "개발자")는 "Lucky Leaf Timer"(이하 "앱") 이용자의 개인정보를 중요하게 생각하며, 관련 법령 및 Google Play 개발자 정책을 준수합니다. 본 개인정보처리방침은 앱이 어떤 정보를 수집·이용·제공·보관하는지 설명합니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. 수집하는 개인정보 항목</h2>
+      <p>본 앱은 기본적으로 이름, 전화번호, 위치, 연락처, 카메라, 마이크, 사진, 파일 등 개인 식별 정보를 수집하지 않습니다. 다만 아래 기능을 이용하는 경우에 한해 다음 정보를 수집합니다.</p>
+      <ul>
+        <li><b>이메일 주소</b>: 기기 변경 시 데이터 백업 및 복원 기능을 사용하고자 계정을 연결한 사용자에 한해 선택적으로 수집</li>
+        <li><b>집중 기록(Focus Records)</b>: 집중/휴식 세션 시간, 발생 시각 등 사용 기록 (기기 로컬 저장이 기본이며, 백업 기능 사용 시 서버에도 저장)</li>
+        <li><b>연령대(Age Group)</b>: 또래 통계 비교 기능을 사용하고자 선택 입력한 연령대 구간 정보(10대/20대/30대/40대+)</li>
+        <li><b>그룹 표시 이름 및 활동 상태</b>: 소셜 챌린지(그룹) 기능 참여 시 그룹 내에서 표시되는 이름과 실시간 집중/휴식/대기 상태, 오늘의 누적 집중 시간</li>
+        <li>광고 식별자(Advertising ID), 기기 정보, IP 주소, 앱 사용 로그 (Google AdMob)</li>
+        <li>구매 내역, 거래 ID (Google Play Billing)</li>
+        <li>앱 평점 및 리뷰 제출 정보 (Google Play In-App Review)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. 개인정보 수집 방법 및 목적</h2>
+      <ul>
+        <li><b>Firebase Authentication:</b> 앱 최초 실행 시 익명 계정이 자동 발급되며, 별도의 회원가입 절차는 없습니다. 사용자가 백업 기능을 선택할 경우에만 기존 익명 계정에 이메일/비밀번호가 연결(link)됩니다.</li>
+        <li><b>Firebase Firestore (백업 및 통계):</b> 집중 기록, 연령대, 그룹 관련 정보는 기기 변경 시 데이터를 복원하고 또래·그룹원과의 비교 통계를 제공하기 위해 Firebase Firestore 서버에 저장됩니다.</li>
+        <li><b>연령대 통계 비교:</b> 선택 입력한 연령대 정보는 동일 연령대 사용자의 오늘자 평균 집중 시간과 비교하는 데 사용되며, 이 과정에서 집계용 수치(오늘 총 집중 시간, 연령대 구간)가 로그인한 다른 사용자에게도 조회될 수 있습니다.</li>
+        <li><b>소셜 챌린지(그룹) 기능:</b> 초대 코드로 그룹에 참여한 사용자의 표시 이름과 실시간 상태(집중/휴식/대기), 오늘의 누적 집중 시간이 같은 그룹 멤버에게 공유됩니다.</li>
+        <li><b>Google AdMob (Native Ads):</b> 맞춤형/일반 광고 제공 및 광고 효과 측정을 위해 광고 식별자, 기기 정보 등이 수집됩니다.</li>
+        <li><b>Google Play Billing:</b> "광고 제거" 인앱 상품(2,900원) 결제 처리를 위해 Google Play 결제 시스템을 통해 구매 정보가 처리됩니다. 결제 정보(카드 정보 등)는 개발자가 직접 수집하지 않으며 Google이 처리합니다.</li>
+        <li><b>Google Play In-App Review:</b> 앱 내 평점 요청 시 Google Play 자체 리뷰 시스템이 사용되며, 개발자는 개별 사용자의 리뷰 내용이나 신원을 식별할 수 없습니다.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. 맞춤형 광고(Personalized Ads) 및 UMP(사용자 메시징 플랫폼)</h2>
+      <p>본 앱은 Google AdMob을 통해 맞춤형 광고를 제공할 수 있습니다. 유럽경제지역(EEA), 영국, 스위스 사용자에게는 Google이 제공하는 UMP(User Messaging Platform) SDK를 통해 앱 최초 실행 시 동의 화면이 표시되며, 이용자는 다음을 선택할 수 있습니다.</p>
+      <ul>
+        <li>맞춤형 광고 동의</li>
+        <li>비맞춤형 광고만 허용</li>
+        <li>언제든지 앱 내 설정에서 동의 상태 변경(개인정보 설정 옵션)</li>
+      </ul>
+      <p>동의를 거부하더라도 앱의 핵심 기능(타이머 등)은 정상적으로 이용할 수 있습니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. 개인정보의 제3자 제공 및 공유</h2>
+      <p>개발자는 이용자의 개인정보를 원칙적으로 외부에 판매하지 않습니다. 다만 아래 제3자는 각자의 개인정보처리방침에 따라 앱 운영에 필요한 최소한의 정보를 처리하며, 소셜 챌린지 기능 이용 시 표시 이름과 활동 상태는 같은 그룹에 소속된 다른 이용자에게 공개됩니다.</p>
+      <ul>
+        <li>Google Firebase (Authentication, Firestore) – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+        <li>Google AdMob – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+        <li>Google Play Billing – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+        <li>Google Play In-App Review – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. 개인정보의 보유 및 이용 기간</h2>
+      <p>이메일, 집중 기록, 연령대 등 백업 관련 정보는 사용자가 앱 내에서 계정 삭제 또는 기록 삭제를 요청할 때까지 Firebase 서버에 보관됩니다. 계정 삭제 시 해당 사용자의 이메일, 집중 기록, 연령대 정보는 즉시 영구적으로 삭제됩니다. 광고 SDK 및 결제 SDK를 통해 생성되는 정보는 각 제3자(Google)의 정책에 따라 별도로 보관·파기됩니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. 이용자의 권리</h2>
+      <ul>
+        <li>앱 내 설정에서 언제든지 자신의 집중 기록을 삭제하거나 계정을 탈퇴할 수 있습니다.</li>
+        <li>기기 설정(Android 설정 > 개인정보 보호 > 광고)에서 광고 개인최적화를 해제하거나 광고 식별자를 재설정할 수 있습니다.</li>
+        <li>앱 내 개인정보 설정(UMP 개인정보 옵션)에서 광고 동의 상태를 언제든지 변경할 수 있습니다.</li>
+        <li>연령대 정보 및 그룹 참여는 선택 사항이며, 입력하지 않아도 앱의 핵심 기능(타이머)은 정상적으로 이용할 수 있습니다.</li>
+        <li>본 방침 및 개인정보 처리에 대해 문의하고자 하는 경우 아래 이메일로 연락할 수 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>8. 아동의 개인정보</h2>
+      <p>본 앱은 만 13세 미만 아동을 주 대상으로 하지 않으며, 아동으로부터 고의로 개인정보를 수집하지 않습니다.</p>
+    </div>
+
+    <div class="card">
+      <h2>9. 문의처</h2>
+      <p>개인정보처리방침에 대한 문의: <a href="mailto:hsgdf123@gmail.com">hsgdf123@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+      <h2>10. 방침의 변경</h2>
+      <p>본 개인정보처리방침은 관련 법령 및 정책 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
+      <p><b>시행일: 2026년 8월 7일</b></p>
+    </div>
+
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div id="lang-en" class="lang-block" hidden>
+
+    <div class="card">
+      <h2>1. Overview</h2>
+      <p>Developer Heonix ("Developer") values the privacy of users of "Lucky Leaf Timer" (the "App") and complies with applicable laws and Google Play Developer Program Policies. This Privacy Policy explains what information the App collects, uses, discloses, and retains.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Information We Collect</h2>
+      <p>The App does not collect personally identifiable information such as name, phone number, location, contacts, camera, microphone, photos, or files by default. The following information is collected only when the related feature is used.</p>
+      <ul>
+        <li><b>Email address:</b> Collected only if you choose to link an account for cross-device backup and restore</li>
+        <li><b>Focus Records:</b> Focus/break session durations and timestamps (stored locally by default; also stored on the server if backup is enabled)</li>
+        <li><b>Age Group:</b> An optional age bracket (teens/20s/30s/40s+) used for peer statistics comparison</li>
+        <li><b>Group display name and activity status:</b> When participating in the Social Challenge (group) feature, your display name, real-time status (focus/break/idle), and today's total focus minutes are shared with group members</li>
+        <li>Advertising ID, device information, IP address, app usage logs (Google AdMob)</li>
+        <li>Purchase history, transaction ID (Google Play Billing)</li>
+        <li>Rating and review submission data (Google Play In-App Review)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. How and Why Data Is Collected</h2>
+      <ul>
+        <li><b>Firebase Authentication:</b> An anonymous account is created automatically on first launch; there is no separate sign-up. An email/password is linked to this anonymous account only if you choose to enable backup.</li>
+        <li><b>Firebase Firestore (Backup & Statistics):</b> Focus records, age group, and group-related data are stored on Firebase Firestore to enable cross-device restore and peer/group comparison statistics.</li>
+        <li><b>Age group comparison:</b> Your optional age group is used to compare today's average focus time with other users in the same bracket; aggregated figures (today's total focus minutes, age bracket) may be visible to other signed-in users during this process.</li>
+        <li><b>Social Challenge (group) feature:</b> Your display name, real-time status (focus/break/idle), and today's total focus minutes are shared with members of the group you joined via invite code.</li>
+        <li><b>Google AdMob (Native Ads):</b> Used to serve personalized/non-personalized ads and measure ad performance; collects advertising ID and device information.</li>
+        <li><b>Google Play Billing:</b> Used to process the "Remove Ads" in-app purchase (₩2,900). Purchase transactions are handled by Google Play; the Developer does not directly collect payment card data.</li>
+        <li><b>Google Play In-App Review:</b> Uses Google Play's native in-app review system. The Developer cannot identify individual reviewers or their review content.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Personalized Ads &amp; UMP (User Messaging Platform)</h2>
+      <p>The App may serve personalized ads through Google AdMob. For users in the European Economic Area (EEA), the UK, and Switzerland, Google's UMP SDK displays a consent form on first launch, allowing users to:</p>
+      <ul>
+        <li>Consent to personalized ads</li>
+        <li>Allow non-personalized ads only</li>
+        <li>Change consent choices at any time via in-app Privacy Options</li>
+      </ul>
+      <p>Core app functionality (the timer) remains fully usable regardless of consent choice.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. Third-Party Data Sharing</h2>
+      <p>The Developer does not sell personal information. The following third parties process the minimum information necessary to operate the App, each governed by its own privacy policy. When you use the Social Challenge feature, your display name and activity status are visible to other members of your group.</p>
+      <ul>
+        <li>Google Firebase (Authentication, Firestore) – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li>Google AdMob – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li>Google Play Billing – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li>Google Play In-App Review – <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. Data Retention</h2>
+      <p>Backup-related data (email, focus records, age group) is retained on Firebase servers until you delete your account or records within the App. Upon account deletion, this data is permanently deleted immediately. Data generated via third-party SDKs is retained and deleted according to each provider's (Google's) policies.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. Your Rights</h2>
+      <ul>
+        <li>You can delete your focus records or delete your account at any time via in-app settings.</li>
+        <li>You can opt out of ad personalization or reset your advertising ID in your device settings (Settings > Privacy > Ads).</li>
+        <li>You can change your ad consent status at any time via the in-app Privacy Options (UMP).</li>
+        <li>Providing an age group or joining a group is optional; core app functionality (the timer) remains usable without them.</li>
+        <li>You may contact us using the email below with any privacy-related questions.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>8. Children's Privacy</h2>
+      <p>The App is not directed at children under 13 (or the applicable age of consent in your jurisdiction), and we do not knowingly collect personal information from children.</p>
+    </div>
+
+    <div class="card">
+      <h2>9. Contact</h2>
+      <p>For privacy-related inquiries: <a href="mailto:hsgdf123@gmail.com">hsgdf123@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+      <h2>10. Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated to reflect changes in law or policy. Updates will be posted on this page.</p>
+      <p><b>Effective Date: August 7, 2026</b></p>
+    </div>
+
+  </div>
+
+  <div class="updated">Last updated: 2026-08-07</div>
+  <footer>© 2026 Heonix. All rights reserved.</footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('lang-ko').hidden = lang !== 'ko';
+    document.getElementById('lang-en').hidden = lang !== 'en';
+    document.getElementById('btn-ko').classList.toggle('active', lang === 'ko');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>
